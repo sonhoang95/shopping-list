@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Shopping List</title>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div id="page-top">
+          <h1>Shopping List</h1>
+          <!-- search and show/hide functionality -->
+          <form id="search-item">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search items..."
+            />
+            <button class="hide">Hide list</button>
+          </form>
+        </div>
+      </header>
+      <!-- Section add item -->
+      <form id="add-item">
+        <input type="text" placeholder="What do you want to buy?" />
+        <button class="btn-green">+</button>
+      </form>
+
+      <div id="grocery-list">
+        <h2 class="title">Items To Buy</h2>
+        <ul>
+          <li>
+            <span class="item">Milk</span>
+            <span class="delete">Delete</span>
+          </li>
+
+          <li>
+            <span class="item">Sugar & Spice</span>
+            <span class="delete">Delete</span>
+          </li>
+
+          <li>
+            <span class="item">Something to drink (e.g. coke)</span>
+            <span class="delete">Delete</span>
+          </li>
+
+          <li>
+            <span class="item">Pizza (pref pepperoni)</span>
+            <span class="delete">Delete</span>
+          </li>
+        </ul>
+      </div>
+
+      <div id="tab-wrapper">
+        <ul class="heading">
+          <li class="active" data-clicked="#joke">Food Joke</li>
+          <li data-clicked="#facts">Food Did you know?</li>
+        </ul>
+        <div id="joke" class="panel">
+          <p>What do you call a fake noodle?</p>
+          <button class="btn" id="show-answer">Answer</button>
+          <p id="answer"></p>
+        </div>
+        <div id="facts" class="panel">
+          <p class="highlight-text">
+            This is what I learned about food this week
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            soluta laborum nostrum. Ullam numquam neque, natus ab expedita
+            veritatis doloremque. Excepturi fugit quam esse eaque tempore
+            architecto harum dolores odio?
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
